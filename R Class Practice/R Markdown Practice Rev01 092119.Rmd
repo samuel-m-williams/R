@@ -1,0 +1,21 @@
+---
+title: "Practice_Markdown"
+author: "Samuel M Williams"
+date: "9/21/2019"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r}
+
+install.packages("readxl")
+library("readxl")
+
+excel_sheets("department_data.xlsx")
+
+read_excel("department_data.xlsx", sheet = "RCW_data_long" )
+
+```
+
+
